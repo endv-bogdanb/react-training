@@ -1,0 +1,13 @@
+diff --git a/node_modules/@beeq/core/dist/components/assetsPath.js b/node_modules/@beeq/core/dist/components/assetsPath.js
+index 52dd42d..a19b73e 100644
+--- a/node_modules/@beeq/core/dist/components/assetsPath.js
++++ b/node_modules/@beeq/core/dist/components/assetsPath.js
+@@ -6,7 +6,7 @@
+  * Inspired by Shoelace's `getBasePath` and `setBasePath` functions.
+  * https://github.com/shoelace-style/shoelace/blob/next/src/utilities/base-path.ts
+  */
+-let basePath = '';
++let basePath = '/svg';
+ const scripts = [...document.getElementsByTagName('script')];
+ const findConfigScript = () => scripts.find((script) => script.hasAttribute('data-beeq'));
+ const findFallbackScript = () => scripts.find((script) => /beeq(\.esm)?\.js($|\?)/.test(script.src));

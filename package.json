@@ -1,0 +1,22 @@
+{
+  "name": "react-training",
+  "scripts": {
+    "start": "parcel public/index.html --port 1234"
+  },
+  "dependencies": {
+    "@beeq/core": "1.7.0",
+    "@beeq/react": "1.7.0",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/react": "19.0.1",
+    "@types/react-dom": "19.0.2",
+    "parcel": "2.13.2",
+    "patch-package": "8.0.0",
+    "process": "0.11.10",
+    "typescript": "5.7.2"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
