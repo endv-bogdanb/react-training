@@ -1,24 +1,33 @@
 {
   "name": "react-training",
   "scripts": {
-    "prestartx": "cp -r node_modules/@beeq/core/dist/beeq/svg dist/",
+    "prestart": "mkdir -p dist && cp -r node_modules/@beeq/core/dist/beeq/svg dist/ && npx msw init dist --save",
     "start": "parcel public/index.html --port 1234"
   },
   "dependencies": {
     "@beeq/core": "1.7.0",
     "@beeq/react": "1.7.0",
+    "@tanstack/react-query": "5.62.7",
+    "@tanstack/react-query-devtools": "5.62.7",
     "react": "18.3.1",
     "react-dom": "18.3.1",
+    "react-hook-form": "7.54.1",
     "react-router-dom": "6.28.0"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@types/react": "18.3.16",
     "@types/react-dom": "18.3.5",
+    "msw": "2.6.9",
     "parcel": "2.13.2",
     "patch-package": "8.0.0",
     "process": "0.11.10",
     "typescript": "5.7.2"
   },
-  "browserslist": "> 0.5%, last 2 versions, not dead"
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "msw": {
+    "workerDirectory": [
+      "dist"
+    ]
+  }
 }

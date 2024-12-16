@@ -38,6 +38,24 @@ export const SideBar: FC = () => {
             </BqSideMenuItem>
           </Link>
         </BqSideMenuItem>
+        <BqSideMenuItem>
+          <span>Libraries</span>
+          <Link to="/libraries/react-router">
+            <BqSideMenuItem>
+              <span>ReactRouter</span>
+            </BqSideMenuItem>
+          </Link>
+          <Link to="/libraries/hook-form">
+            <BqSideMenuItem>
+              <span>Hook form</span>
+            </BqSideMenuItem>
+          </Link>
+          <Link to="/libraries/react-query">
+            <BqSideMenuItem>
+              <span>React query</span>
+            </BqSideMenuItem>
+          </Link>
+        </BqSideMenuItem>
       </BqSideMenu>
       <Outlet />
     </>
