@@ -30,8 +30,6 @@ export const ReactQuery: FC = () => {
     });
   }, [queryClient]);
 
-  console.log(isFetching);
-
   return (
     <>
       {isLoading && <BqProgress indeterminate />}
@@ -52,6 +50,7 @@ export const ReactQuery: FC = () => {
         open={isFetching && !isLoading}
         placement="bottom-center"
         type="loading"
+        time={Number.MAX_SAFE_INTEGER}
       >
         Refreshing list ...
       </BqToast>
