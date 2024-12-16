@@ -1,15 +1,11 @@
-import { BqButton, BqDropdown, BqIcon, BqOption } from "@beeq/react";
 import type { FC } from "react";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./pages";
 
 export const App: FC = () => {
   return (
     <>
-      <BqDropdown>
-        <BqButton slot="trigger">Hello world</BqButton>
-        <BqOption>
-          <BqIcon name="caret-down" slot="suffix" />a
-        </BqOption>
-      </BqDropdown>
+      <RouterProvider router={router} />
     </>
   );
 };
