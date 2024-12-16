@@ -8,6 +8,11 @@ export const SideBar: FC = () => {
       <BqSideMenu>
         <BqSideMenuItem>
           Local
+          <Link to="/local/use-ref">
+            <BqSideMenuItem>
+              <span>Ref</span>
+            </BqSideMenuItem>
+          </Link>
           <Link to="/local/use-state">
             <BqSideMenuItem>
               <span>State</span>

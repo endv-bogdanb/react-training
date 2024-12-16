@@ -7,7 +7,7 @@ import {
   reactQueryRoutes,
   reactRouterRoutes,
 } from "./Libraries";
-import { UseReducer, UseState, UseStateUpdate } from "./Local";
+import { UseReducer, UseRef, UseState, UseStateUpdate } from "./Local";
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +20,10 @@ export const router = createBrowserRouter([
       {
         path: "/local",
         children: [
+          {
+            path: "use-ref",
+            Component: UseRef,
+          },
           {
             path: "use-state",
             Component: UseState,
