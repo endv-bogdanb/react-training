@@ -1,6 +1,5 @@
-import { BqSwitch } from "@beeq/react";
 import type { FC } from "react";
-import { useMyContext, useMyContextState } from "./myContext";
+import { useMyContextState } from "./myContext";
 
 export const ToggleValue: FC = () => {
   const { toggle } = useMyContextState();

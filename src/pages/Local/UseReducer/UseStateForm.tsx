@@ -1,4 +1,4 @@
-import { BqButton, BqInput } from "@beeq/react";
+import { BqInput } from "@beeq/react";
 import { type FC, useState } from "react";
 
 export const UseStateForm: FC = () => {

@@ -1,9 +1,8 @@
 import { BqSideMenu, BqSideMenuItem } from "@beeq/react";
 import type { FC } from "react";
-import { Link, Outlet, useNavigate } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 export const SideBar: FC = () => {
-  const navigate = useNavigate();
   return (
     <>
       <BqSideMenu>
